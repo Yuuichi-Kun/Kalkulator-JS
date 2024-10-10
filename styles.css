@@ -1,0 +1,111 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Press Start 2P', cursive; /* Font ala retro game/anime */
+}
+
+#background-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%); /* Pusatkan video */
+    z-index: -1;
+    background-size: cover;
+    object-fit: cover; /* Pastikan video menutupi area dan tetap proporsional */
+}
+
+
+/* Kalkulator dengan model landscape */
+.calculator {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    width: 600px; /* Lebih lebar untuk landscape */
+    height: 250px; /* Lebih pendek untuk landscape */
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ff1493; /* Warna khas anime pink neon */
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+    text-shadow: 2px 2px #ff69b4; /* Efek teks ala anime */
+}
+
+/* Bagian input-an kalkulator */
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+}
+
+input, select {
+    padding: 12px;
+    margin: 0 10px;
+    border: 2px solid #ff69b4;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #f0f8ff;
+    color: #333;
+    width: 30%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    font-family: 'Press Start 2P', cursive;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff69b4;
+}
+
+#hasil {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+    background-color: #f0f8ff; /* Warna latar belakang card */
+    padding: 15px; /* Spasi dalam card */
+    border-radius: 10px; /* Membuat sudut membulat */
+    text-shadow: 1px 1px #ff1493; /* Efek bayangan teks */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan untuk card */
+    transition: transform 0.3s ease; /* Efek transisi */
+}
+
+/* Menambahkan efek hover pada card */
+#hasil:hover {
+    transform: scale(1.05); /* Membesar sedikit saat hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Menambah bayangan saat hover */
+}
+
+
